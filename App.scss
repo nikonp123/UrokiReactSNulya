@@ -1,0 +1,48 @@
+.header {
+    font-size: 26px;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 5%;
+    float: left;
+    * {
+        margin-top: 5px;
+    }
+    button {
+        cursor: pointer;
+        width: 100%;
+        transition: transform 500ms ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.users {
+    width: 500px;
+}
+
+.user {
+    margin-bottom: 50px;
+    background-color: rgb(37, 97, 124);
+    padding: 20px;
+    &::marker {
+        color: indigo;
+    }
+}
+
+.empty {
+    color: red;
+    font-size: 30px;
+}
+
+.delete-icon:hover, .edit-icon:hover {
+    transition: 0.6s;
+    opacity: 0.5;
+}
